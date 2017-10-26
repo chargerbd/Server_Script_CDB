@@ -20,7 +20,7 @@ function c79229522.contactfil(tp)
 	return Duel.GetMatchingGroup(c79229522.cfilter,tp,LOCATION_ONFIELD,LOCATION_ONFIELD,nil,tp)
 end
 function c79229522.cfilter(c,tp)
-	return c:IsAbleToGraveAsCost() and (c:IsControler(tp) or c:IsFaceup())
+	return (c:IsCode(70095154) or c:IsType(TYPE_MONSTER)) and c:IsAbleToGraveAsCost() and (c:IsControler(tp) or c:IsFaceup())
 end
 function c79229522.contactop(g,tp,c)
 	Duel.SendtoGrave(g,REASON_COST+REASON_MATERIAL)
