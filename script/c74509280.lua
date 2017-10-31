@@ -48,7 +48,7 @@ function c74509280.synchktg(e,c,sg,tg,ntg,tsg,ntsg)
 	if c then
 		local res=true
 		if sg:GetCount()>=2 or (not tg:IsExists(c74509280.chk2,1,c) and not ntg:IsExists(c74509280.chk2,1,c) 
-			and not sg:IsExists(c55863245.chk2,1,c)) then return false end
+			and not sg:IsExists(c74509280.chk2,1,c)) then return false end
 		local ttg=tg:Filter(c74509280.chk2,nil)
 		local nttg=ntg:Filter(c74509280.chk2,nil)
 		local trg=tg:Clone()
