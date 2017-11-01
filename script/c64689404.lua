@@ -24,7 +24,7 @@ function c64689404.initial_effect(c)
 	e2:SetTarget(c64689404.destg)
 	e2:SetOperation(c64689404.desop)
 	c:RegisterEffect(e2)
-	e1:SetLabelObject(e2
+	e1:SetLabelObject(e2)
 end
 function c64689404.raccost(e,tp,eg,ep,ev,re,r,rp,chk)
 	if chk==0 then return e:GetHandler():CheckRemoveOverlayCard(tp,1,REASON_COST) end
